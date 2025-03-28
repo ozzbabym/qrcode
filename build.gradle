@@ -1,5 +1,22 @@
-dependencies {
-    implementation 'com.google.zxing:core:3.4.1' // Генерация QR
-    implementation 'com.journeyapps:zxing-android-embedded:4.3.0' // Сканер QR
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+// В файле /build.gradle
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
