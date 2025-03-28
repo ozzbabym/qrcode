@@ -1,36 +1,44 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnSelectImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Выбрать изображение" />
+        android:text="@string/select_image"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivPreview"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
 
     <Button
-        android:id="@+id/btnGenerateQR"
+        android:id="@+id/btnGenerateQr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Создать QR-код" />
-
-    <Button
-        android:id="@+id/btnScanQR"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Сканировать QR" />
+        android:layout_marginTop="16dp"
+        android:text="@string/generate_qr"/>
 
     <ImageView
-        android:id="@+id/qrImageView"
+        android:id="@+id/ivQr"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnScanQr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/scan_qr"/>
 </LinearLayout>
