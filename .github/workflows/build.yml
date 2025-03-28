@@ -15,11 +15,15 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     
+    - name: Set execute permissions
+      run: |
+        chmod +x gradlew
+        ls -la gradlew
+        
     - name: Verify project structure
       run: |
         ls -la
         ls -la app/
-        ./gradlew projects
         
     - name: Build APK
       run: ./gradlew :app:assembleDebug --stacktrace
