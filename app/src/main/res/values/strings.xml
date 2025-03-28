@@ -1,1 +1,6 @@
-
+<resources>
+    <string name="app_name">QR Base64</string>
+    <string name="select_image">Выбрать изображение</string>
+    <string name="generate_qr">Создать QR-код</string>
+    <string name="scan_qr">Сканировать QR</string>
+</resources>
