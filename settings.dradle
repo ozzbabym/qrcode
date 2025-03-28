@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "QRBase64"
+rootProject.name = "qrcode"
 include ':app'
