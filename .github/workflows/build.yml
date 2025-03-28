@@ -1,6 +1,6 @@
 name: Android CI
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
@@ -15,9 +15,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     
-    - name: Grant execute permission
-      run: chmod +x gradlew
-    
+    - name: Make gradlew executable
+      run: |
+        chmod +x gradlew
+        ./gradlew --version
+        
     - name: Build APK
       run: ./gradlew assembleDebug
       
