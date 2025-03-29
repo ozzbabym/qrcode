@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.qrbase64'
+    namespace 'com.example.qrcode'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.qrbase64"
+        applicationId "com.example.qrcode"
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -28,17 +28,13 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
-    buildFeatures {
-        viewBinding true
-    }
 }
 
+// УДАЛИТЬ блок repositories {} если он есть
 dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.10.0'
-    
-    // Библиотеки для QR
     implementation 'com.google.zxing:core:3.5.2'
     implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
 }
