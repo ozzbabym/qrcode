@@ -16,17 +16,10 @@ jobs:
         distribution: 'temurin'
     
     - name: Set execute permissions
-      run: |
-        chmod +x gradlew
-        ls -la gradlew
-        
-    - name: Verify project structure
-      run: |
-        ls -la
-        ls -la app/
+      run: chmod +x gradlew
         
     - name: Build APK
-      run: ./gradlew :app:assembleDebug --stacktrace
+      run: ./gradlew :app:assembleDebug --stacktrace --no-daemon
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
