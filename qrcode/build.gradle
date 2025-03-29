@@ -9,13 +9,7 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
+// УДАЛИТЬ весь блок allprojects {}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
