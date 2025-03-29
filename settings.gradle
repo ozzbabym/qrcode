@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "qrcode"
+rootProject.name = "app"
 include ':app'  // Эта строка критически важна!
