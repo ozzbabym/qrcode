@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "/"
+rootProject.name = ""
 include ':app'  // Этастрока критически важна!
